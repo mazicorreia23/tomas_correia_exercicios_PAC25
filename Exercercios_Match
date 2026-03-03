@@ -1,0 +1,192 @@
+# Exercício 1
+# dia = str(input('Digite um dia da semana: '))
+
+# match dia:
+#     case 'Segunda-feira'|'Terça-feira'|'Quarta-feira'|'Quinta-feira'|'Sexta-feira':
+#         print(dia, 'é um dia útil')
+#     case 'Sábado'|'Domingo':
+#         print(dia, 'é um dia de fim de semana')
+#     case _:
+#         print('Dia inválido')
+
+# Exercício 2
+# nota = int(input('Digite a nota do aluno: '))
+
+# match nota:
+#     case nota if nota >= 90:
+#         print('excelente')
+#     case nota if 70 <=  nota < 90:
+#         print('bom')
+#     case nota if 50 <=  nota < 70:
+#         print('Suficiente')    
+#     case n if n < 50:
+#         print('Insuficiente')
+#     case _:
+#         print('Valor inválido')
+  
+# Exercício 3    
+# a = int(input('Digite um valor: '))
+# b = str(input('Digite tipo(compra/venda): '))
+
+# transacao = {"tipo": b, "valor": a}
+
+# match transacao["tipo"]:
+#     case 'compra':
+#         print('Valor da compra: ', transacao["valor"])
+#     case 'venda':
+#         print('Valor da venda: ', transacao["valor"])
+#     case _:
+#         print('Tipo de transação inválida')
+
+# Exercício 4
+# valor = 1
+
+# match valor:
+#     case int():
+#         resultado = "Número inteiro"
+        
+#     case float():
+#         resultado = "Número decimal"
+        
+#     case str():
+#         resultado = "String numérica"
+        
+#     case str():
+#         resultado = "String textual"
+        
+#     case list():
+#         resultado = "Lista"
+        
+#     case _:
+#         resultado = "Tipo desconhecido"
+
+# print(f"O valor definido é: {resultado}")
+
+# Exercício 5
+# mensagem = input("Insira a sua mensagem: ")
+
+# match mensagem.lower():
+#     case "olá" | "bom dia":
+#         resultado = "Saudação"
+        
+#     case mensagem if mensagem.endswith("?"):
+#         resultado = "Pergunta"
+        
+#     case mensagem if "tchau" in mensagem or "adeus" in mensagem:
+#         resultado = "Despedida"
+        
+#     case _:
+#         resultado = "Mensagem genérica"
+
+# print(f"{resultado}")
+
+# Exercício 6
+# status = input("Digite o status do servidor (ok/erro): ")
+# tempo_resposta = int(input("Digite o tempo de resposta do servidor em ms: "))
+# servidor = {"status": status, "tempo_resposta": tempo_resposta}
+
+# match servidor["status"]:
+#     case 'ok':
+       
+#         if servidor["tempo_resposta"] > 200:
+#             print("Servidor lento - Tempo:", servidor["tempo_resposta"], "ms")
+#         else:
+#             print("Servidor ativo - Status:", servidor["status"])
+            
+#     case 'erro':
+#         print("Servidor indisponível")
+        
+#     case _:
+#         print("Estado desconhecido")
+
+# exercício 7
+
+# cat = input("Digite a categoria do produto (eletrônico/alimento): ")
+# preco = int(input("Digite o preço do produto: "))
+# produto = {"categoria": cat, "preco": preco}
+
+# match produto["categoria"]:
+#     case 'eletrônico':
+        
+#         if produto["preco"] > 1000:
+#             print("Produto de luxo")
+#         else:
+#             print("Produto comum")
+            
+#     case 'alimento':
+#         print("Produto alimentar")
+        
+#     case _:
+#         print("Categoria desconhecida")
+
+# exercício 8
+# operacao = input("Digite a operação desejada (soma/subtrai/multiplica/divide): ")
+# num1 = int(input("Digite o primeiro número: "))
+# num2 = int(input("Digite o segundo número: "))
+
+# match operacao:
+#     case 'soma':
+#         resultado = num1 + num2
+#         print(f"Resultado da soma: {resultado}")
+        
+#     case 'subtrai':
+#         resultado = num1 - num2
+#         print(f"Resultado da subtração: {resultado}")
+        
+#     case 'multiplica':
+#         resultado = num1 * num2
+#         print(f"Resultado da multiplicação: {resultado}")
+        
+#     case 'divide':
+#         if num2 != 0:
+#             resultado = num1 / num2
+#             print(f"Resultado da divisão: {resultado}")
+#         else:
+#             print("Erro: Não é possível dividir por zero")
+            
+#     case _:
+#         print("Operação inválida")
+
+# exercício 9
+# metodo = input("Digite o método HTTP (GET/POST): ").upper()
+# Conteudo = input("Digite o conteúdo da requisição (deixe vazio para sem conteúdo): ")
+# requisicao = {"metodo": metodo, "conteudo": Conteudo}
+
+# match requisicao["metodo"]:
+#     case 'GET':
+#         print("Requisição GET recebida")
+        
+#     case 'POST':
+       
+#         if requisicao["conteudo"]:
+#             print("Requisição POST com dados válidos")
+#         else:
+#             print("Requisição POST sem dados")
+            
+#     case _:
+#         print("Método não suportado")
+
+# exercício 10
+# while True:
+#     j1 = input("Jogador 1 (pedra, papel, tesoura): ").lower().strip()
+#     j2 = input("Jogador 2 (pedra, papel, tesoura): ").lower().strip()
+
+#     match [j1, j2]:
+#         case [j1, j2] if j1 == j2:
+#             print("Empate!")
+        
+
+        
+#         case ["pedra", "tesoura"] | ["tesoura", "papel"] | ["papel", "pedra"]:
+#             print(f"Resultado: {j1.capitalize()} ganha de {j2}!")
+#             print("Veredito: Jogador 1 venceu!")
+#             break  
+
+    
+#         case ["tesoura", "pedra"] | ["papel", "tesoura"] | ["pedra", "papel"]:
+#             print(f"Resultado: {j2.capitalize()} ganha de {j1}!")
+#             print("Veredito: Jogador 2 venceu!")
+#             break 
+
+#         case _:
+#             print("Jogada inválida! Tenta novamente")

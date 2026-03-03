@@ -1,0 +1,205 @@
+#exercercio 1
+# segundos = int(input('Digite o número de segundos: '))
+# horas = segundos // 3600
+# minutos = (segundos % 3600) // 60
+# segundos_restantes = segundos % 60
+# print(f'{horas} horas, {minutos} minutos e {segundos_restantes} segundos')
+
+#exercício 2
+# n1 = int(input("Digite o primeiro número: "))
+# n2 = int(input("Digite o segundo número: "))
+# n3 = int(input("Digite o terceiro número: "))
+# maior = 0
+# menor = 0
+# if n1 > n2 and n1 > n3:
+#     maior = n1
+# elif n2 > n1 and n2 > n3:
+#     maior = n2
+# else:
+#     maior = n3
+
+# if n1 < n2 and n1 < n3:
+#     menor = n1
+# elif n2 < n1 and n2 < n3:
+#     menor = n2
+# else:    
+#     menor = n3
+    
+# print(f"O maior número é: {maior}")
+# print(f"O menor número é: {menor}")
+
+# exercício 3
+# n1 = int(input("Digite o primeiro número: "))
+# n2 = int(input("Digite o segundo número: "))
+
+# if n1 > n2:
+#     maior = n1
+#     menor = n2
+# else:
+#     maior = n2
+#     menor = n1
+
+# print("crecente:", menor, maior)
+# print("decrescente:", maior, menor)
+
+# Exercício 4
+
+# saldo_inicial = 1000
+# valor = int (input("Digite o valor do cheque: "))
+
+
+# if valor <= saldo_inicial:
+    
+#     saldo_atualizado = saldo_inicial - valor
+#     print(f"Cheque descontado, saldo: {saldo_atualizado}")
+# else:
+    
+#     print("Saldo insuficiente. O cheque não pode ser descontado.")
+#     print(f"Saldo atual: {saldo_inicial}")
+
+# Exercício 5
+
+# n1 = int(input("Digite o primeiro número: "))
+# n2 = int(input("Digite o segundo número: "))
+# n3 = int(input("Digite o terceiro número: "))
+
+
+# if n1 <= n2 and n1 <= n3:
+#     menor = n1
+#     if n2 <= n3:
+#         meio, maior = n2, n3
+#     else:
+#         meio, maior = n3, n2
+# elif n2 <= n1 and n2 <= n3:
+#     menor = n2
+#     if n1 <= n3:
+#         meio, maior = n1, n3
+#     else:
+#         meio, maior = n3, n1
+# else:
+#     menor = n3
+#     if n1 <= n2:
+#         meio, maior = n1, n2
+#     else:
+#         meio, maior = n2, n1
+
+# print(f"Crescente: {menor}, {meio}, {maior}")
+# print(f"Decrescente: {maior}, {meio}, {menor}")
+
+
+# Exercício 6
+
+# nome_cliente = str(input("Digite o nome do cliente: "))
+# valor_compra = int(input("Digite o valor da compra: "))
+
+
+# if valor_compra <= 200:
+#     percentagem = 10
+# elif valor_compra <= 500:
+#     percentagem = 15
+# else:
+#     percentagem = 20
+
+
+# valor_desconto = valor_compra * (percentagem / 100)
+# total_pagar = valor_compra - valor_desconto
+
+
+# print(f"Nome: {nome_cliente}")
+# print(f"Compra: {valor_compra:.2f}€")
+# print(f"Desconto ({percentagem}%): {valor_desconto:.2f}€")
+# print(f"Total a pagar: {total_pagar:.2f}€")
+
+# Exercício 7
+# nota1 = int(input("Digite a primeira nota: "))
+# nota2 = int(input("Digite a segunda nota: "))
+# nota3 = int(input("Digite a terceira nota: "))
+
+
+# peso1=2
+# peso2=3
+# peso3=5
+
+
+# soma_notas = (nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)
+# soma_pesos = peso1 + peso2 + peso3
+
+# media_final = soma_notas / soma_pesos
+
+
+# if media_final >= 6:
+#     situacao = "APROVADO"
+# else:
+#     situacao = "REPROVADO"
+
+
+# print(f"Média: {media_final:.1f}")
+# print(f"Situação: {situacao}")
+
+# Exercício 8
+# notas =[]
+# contador = 0
+
+# for i in range(20):
+#     numero = int(input(f"Digite nota: "))
+#     notas.append(numero)
+
+# media = sum(notas) / len(notas)
+
+# for i in range(len(notas)):
+#     if notas[i] > media:
+#         contador += 1
+        
+# print(f"A média é: {media:.2f}")
+# print(f"Notas acima da média: {contador}")
+
+# Exercício 9   
+# mes = int(input("Digite o número do mês (1-12): "))
+
+# match mes:
+#     case 1:
+#         mes = "Janeiro"
+#     case 2:
+#         mes = "Fevereiro"
+#     case 3:
+#         mes = "Março"
+#     case 4:
+#         mes = "Abril"
+#     case 5:
+#         mes = "Maio"
+#     case 6:
+#         mes = "Junho"
+#     case 7:
+#         mes = "Julho"
+#     case 8:
+#         mes = "Agosto"
+#     case 9:
+#         mes = "Setembro"
+#     case 10:
+#         mes = "Outubro"
+#     case 11:
+#         mes = "Novembro"
+#     case 12:
+#         mes = "Dezembro"
+#     case _:
+#         mes = "Erro: Número inválido! Por favor, escolha entre 1 e 12."
+
+# print(f"Entrada: {mes}")
+# print(f"Saída esperada: {mes}")
+
+#exercício 10
+# contador_par = 0
+# contador_impar = 0
+
+# lista = []
+# for i in range(1, 11):
+#     numero = int(input(f"Digite o  número: "))
+#     lista.append(numero)
+
+# for i in range(len(lista)):
+#     if lista[i] % 2 == 0:
+#         contador_par += 1
+#     else:
+#         contador_impar += 1
+# print(f"Números pares: {contador_par}")
+# print(f"Números ímpares: {contador_impar}")
