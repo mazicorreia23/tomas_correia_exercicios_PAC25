@@ -1,0 +1,411 @@
+# Exercício 1
+# def par_ou_impar(numero):
+#     if numero % 2 == 0:
+#         return 'par'
+#     else:
+#         return 'ímpar'
+    
+# for i in range(1,31):
+#    print (i, 'é', par_ou_impar(i))
+
+# Exercício 2 
+
+# lista = []
+# def add_numero(numero):
+#     numero = int(input('Digite um número: '))
+#     lista.append(numero)
+
+# def par_impar_neutro(numero):
+#     if numero == 0:
+#         return 'neutro'
+#     elif numero % 2 == 0:
+#         return 'par'
+#     else:
+#         return 'ímpar'
+   
+# for i in range(10):
+#     add_numero(i)
+
+# for i in lista:
+#     print (i, 'é', par_impar_neutro(i))
+
+# Exercício 3
+# lista = []
+
+# def add_nota():
+#     numero = int(input('Digite a nota do aluno: '))
+#     lista.append(numero)
+    
+# for i in range(10):
+#     add_nota()
+  
+# media = sum(lista) / len(lista)
+      
+# print('A média da turma é: ', media)
+
+# Exercício 4
+# def verificar_se_e_primo(numero):
+#     if numero <= 1:
+#         print(numero, 'não é primo')
+#     elif numero == 2:
+#         print(numero, 'é primo')
+#     elif numero % 2 == 0 :
+#         print(numero, 'não é primo')
+#     else:
+#         i = 2
+#         for i in range (3, numero):
+#             if numero % i == 0:
+#                 print(numero, 'não é primo')
+#                 break
+#         else:
+#             print(numero, 'é primo')
+
+
+# num = int(input("Digite um número: "))
+# verificar_se_e_primo(num)
+
+# Exercício 5
+# for i in range(1,10001):
+#     print(i)
+
+# Exercício 6
+# def verificar_primo(numero):
+#     if numero <= 1:
+#         print(numero, 'não é primo')
+#     elif numero == 2:
+#         print(numero, 'é primo')
+#     elif numero % 2 == 0:
+#         print(numero, 'não é primo')
+#     else:
+#         primo = True
+#         for i in range(3, numero, 2):
+#             if numero % i == 0:
+#                 primo = False
+#                 break
+        
+#         if primo:
+#             print(numero, 'é primo')
+#         else:
+#             print(numero, 'não é primo')
+
+# for numero in range(11):
+#     verificar_primo(numero)
+
+# Exercício 7
+# conta = 0
+# for i in range(100):
+#     conta += 10 
+#     print(conta)
+
+# Exercício 8
+# conta = 0
+# for i in range(100):
+#     conta += 10 
+#     print(conta)
+    
+# conta_2 = 15
+# for i in range(98):
+#     conta_2 += 10
+#     print(conta_2)
+
+# Exercício 9
+# numero = int(input('Digite um número entre 1 e 100: '))
+
+# while numero < 1 or numero > 100:
+#     numero = int(input('Digite um número entre 1 e 100: '))
+    
+# Exercício 10
+# def contar_divisores(numero):
+#     contador = 0
+#     for i in range(1, numero + 1):
+#         if numero % i == 0:
+#             contador += 1
+#             print(i, 'é um divisor de', numero)
+    
+#     print('O número', numero, 'tem', contador, 'divisores')
+
+# numero_input = int(input('Digite um número: '))
+# contar_divisores(numero_input)
+
+# Exercício 11
+# for i in range(1, 6):
+#     print(str(i) * i)
+
+# Exercício 12
+# def calcular_operacoes(numero):
+#     contador = 0
+#     for i in range(1, numero):
+#         soma = numero + i
+#         multiplicacao = numero * i
+#         divisao = numero / i
+#         subtracao = numero - i
+
+#         print('Com', i)
+#         print('Soma:', soma)
+#         print('Multiplicação:', multiplicacao)
+#         print('Divisão:', divisao)
+#         print('Subtração:', subtracao)
+#         print('------')
+
+#         contador += 4  
+
+#     print('Total de operações efetuadas:', contador)
+
+
+# numero = int(input('Digite um número: '))
+# calcular_operacoes(numero)
+
+# Exercício 13
+# numero = int(input('Digite um número: '))
+# for i in range(1, 11):
+#     print (numero, 'x', i, '=', numero * i)
+
+# Exercício 14
+# numero = int(input('Digite um número: '))
+# for numero in range(1, 101):
+#     print("Tabuada do", numero)
+#     for i in range(1, 11):
+#         print (numero, 'x', i, '=', numero * i)
+
+# Exercício 15
+# contador = 0
+
+# for codigo in range(256):
+#     print(codigo, "=", chr(codigo))
+#     contador += 1
+
+#     if contador == 20:
+#         opcao = input("Deseja continuar? (s/n): ")
+#         if opcao.lower() != 's':
+#             break
+#         contador = 0
+
+# Exercício 16
+
+# def processar_lista_numeros():
+#     lista = []
+
+#     while len(lista) < 30:
+#         numero = int(input('Digite um número: '))
+#         if numero % 2 == 0 and 1 <= numero <= 50:
+#             print(numero, 'Valido')
+#             lista.append(numero)
+#         else:
+#             print(numero, 'Inválido, digite um número par entre 1 e 50')
+            
+#     media = sum(lista) / 30
+#     print('A média dos números é: ', media)
+
+
+# processar_lista_numeros()
+
+# Exercício 17
+
+# for i in range(1, 101):
+#     if i % 3 != 0 and i % 5 ==  0:
+#         print(i)
+
+# Exercício 18
+
+# def encontrar_numeros_perfeitos(numero):
+#     contador = 0
+
+#     for i in range(1, numero + 1):
+#         div_zero = []
+        
+#         for j in range(1, i):
+#             if i % j == 0:
+#                 div_zero.append(j)
+
+#         if sum(div_zero) == i:
+#             print(i, 'é um número perfeito')
+#             contador += 1
+
+#     print('Total de números perfeitos encontrados:', contador)
+
+# numero_limite = int(input('Digite um número: '))
+# encontrar_numeros_perfeitos(numero_limite)
+
+# Exercício 19
+# a = 1
+# b = 1
+# c = 0
+
+# print(a)
+# print(b)
+
+# for i in range(1,61):
+#     c = a + b
+#     print(c)
+#     a=b
+#     b=c
+ 
+# Teste Final 1
+
+# def verificar_primo_e_divisores(numero):
+#     contador_div = 0
+#     for i in range(1, numero + 1):
+#         if numero % i == 0:
+#             contador_div += 1
+    
+#     eh_primo = False
+#     if numero == 2:
+#         eh_primo = True
+#     elif numero > 2 and numero % 2 != 0:
+#         primo_check = True
+#         for i in range(3, numero, 2):
+#             if numero % i == 0:
+#                 primo_check = False
+#                 break
+#         if primo_check:
+#             eh_primo = True
+
+#     div_zero = []
+#     for j in range(1, numero):
+#         if numero % j == 0:
+#             div_zero.append(j)
+    
+#     status_primo = "é Primo" if eh_primo else "não é Primo"
+#     status_perfeito = "é Perfeito" if sum(div_zero) == numero else "não é Perfeito"
+    
+#     print(f"{numero}: {status_primo} | Divisores: {contador_div} | {status_perfeito}")
+
+# def calculadora():
+#     n1 = float(input("Digite o primeiro número (1-1000): "))
+#     n2 = float(input("Digite o segundo número (1-1000): "))
+    
+#     if 1 <= n1 <= 1000 and 1 <= n2 <= 1000:
+#         op = input("Operação (+, -, *, /): ")
+#         if op == '+': print('Resultado:', n1 + n2)
+#         elif op == '-': print('Resultado:', n1 - n2)
+#         elif op == '*': print('Resultado:', n1 * n2)
+#         elif op == '/': print('Resultado:', n1 / n2 if n2 != 0 else "Erro")
+#     else:
+#         print("Número fora do intervalo (1-1000)")
+
+# def mostrar_tabuada():
+#     numero = int(input("Digite o número da tabuada (1-1000): "))
+#     limite = int(input("Digite até onde quer ir (1-1000): "))
+    
+#     if 1 <= numero <= 1000 and 1 <= limite <= 1000:
+#         for i in range(1, limite + 1):
+#             print(f"{numero} * {i} = {numero * i}")
+#             if i % 20 == 0:
+#                 parar = input("Continuar? (s/n): ")
+#                 if parar.lower() == 'n':
+#                     break
+#     else:
+#         print("Valores fora do intervalo (1-1000)")
+
+# while True:
+#     print("\n--- MENU ---")
+#     print("1 - Analisar Números (Até 1)")
+#     print("2 - Calculadora")
+#     print("3 - Tabuada")
+#     print("4 - Sair")
+    
+#     opcao = input("Escolha: ")
+
+#     if opcao == '1':
+#         valor = int(input("Digite (1-30000): "))
+#         if 1 <= valor <= 30000:
+#             contagem = 0
+#             for n in range(valor, 0, -1):
+#                 verificar_primo_e_divisores(n)
+#                 contagem += 1
+#                 if contagem == 10:
+#                     if input("\nContinuar? (s/n): ").lower() == 'n': break
+#                     contagem = 0
+#     elif opcao == '2':
+#         calculadora()
+#     elif opcao == '3':
+#         mostrar_tabuada()
+#     elif opcao == '4':
+#         break
+
+# Teste Final 2
+
+# def calcular_divisao_final(valor_compra):
+#     desconto = 0
+#     if 100 <= valor_compra <= 200:
+#         desconto = 0.05
+#     elif 200 < valor_compra < 500:
+#         desconto = 0.10
+#     elif valor_compra >= 500:
+#         desconto = 0.15
+    
+#     return valor_compra - (valor_compra * desconto)
+
+# def inserir_cliente(base_dados):
+#     proximo_id = len(base_dados) + 1
+#     print("\nInserindo Cliente Nº:", proximo_id)
+    
+#     nome = input("Nome: ")
+#     morada = input("Morada: ")
+#     tel = input("Telefone: ")
+#     nif = input("NIF: ")
+    
+#     compra = float(input("Valor da Compra: "))
+#     while compra < 0:
+#         print("O valor não pode ser negativo.")
+#         compra = float(input("Valor da Compra: "))
+
+#     div_final = calcular_divisao_final(compra)
+    
+#     cliente = {
+#         'id': proximo_id,
+#         'nome': nome,
+#         'morada': morada,
+#         'tel': tel,
+#         'nif': nif,
+#         'compra': compra,
+#         'div_final': div_final
+#     }
+    
+#     base_dados.append(cliente)
+#     print("Cliente registado com sucesso!")
+
+# def listar_clientes(base_dados):
+#     if len(base_dados) == 0:
+#         print("\nBase de dados vazia.")
+#     else:
+#         for c in base_dados:
+#             print("\nID:", c['id'], "| Nome:", c['nome'], "| NIF:", c['nif'])
+#             print("Morada:", c['morada'], "| Tel:", c['tel'])
+#             print("Compra Original:", c['compra'], "| Total com Desconto:", c['div_final'])
+#             print("-" * 30)
+#             input("Pressione Enter para ver o próximo cliente...")
+
+# def busca_direta(base_dados):
+#     id_busca = int(input("\nDigite o número do cliente que procura: "))
+#     encontrado = False
+#     for c in base_dados:
+#         if c['id'] == id_busca:
+#             print("\nCLIENTE ENCONTRADO:")
+#             print("Nome:", c['nome'], "| Compra:", c['compra'], "| Total:", c['div_final'])
+#             encontrado = True
+#             break
+#     if encontrado == False:
+#         print("Cliente não encontrado.")
+
+# clientes = []
+
+# while True:
+#     print("\n--- GESTÃO DE CLIENTES ---")
+#     print("1 - Inserir Cliente")
+#     print("2 - Listar Clientes")
+#     print("3 - Busca Direta por ID")
+#     print("4 - Sair")
+    
+#     opcao = input("Opção: ")
+
+#     if opcao == '1':
+#         inserir_cliente(clientes)
+#     elif opcao == '2':
+#         listar_clientes(clientes)
+#     elif opcao == '3':
+#         busca_direta(clientes)
+#     elif opcao == '4':
+#         break
+#     else:
+#         print("Opção inválida.")
