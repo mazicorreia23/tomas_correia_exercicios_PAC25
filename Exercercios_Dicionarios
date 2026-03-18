@@ -1,0 +1,92 @@
+# exercicio 1
+# nome = input("Digite seu nome: ")
+# idade = int(input("Digite sua idade: "))
+# curso = input("Digite seu curso: ")
+
+# dados_aluno = { "nome": nome, "idade": idade, "curso": curso }
+
+# print(dados_aluno["nome"])
+# print(dados_aluno["idade"])
+# print(dados_aluno["curso"])
+
+# exercicio 2
+# carro = {'marca': 'Toyota', 'modelo': 'Corolla', 'ano': 2020}
+# print(carro['marca'])
+
+#exercicio 3
+# produtos= {'nome': 'telemovel', 'preco': 1500, 'stock': 30}
+# produtos.pop('stock')
+# print(produtos)
+
+# exercicio 4
+
+# name = input("Digite seu nome: ")
+# e_mail = input("Digite seu e-mail ou deixe vazio: ")
+# utilizador = {'nome': name, 'email': e_mail}
+
+# if utilizador.get('email'): 
+#     print('E-mail encontrado:', utilizador['email'])
+# else:
+#     print('E-mail não encontrado.')
+    
+# exercicio 5
+
+# letras = {}
+# palavra = input('digite uma palavra:')
+# for i in range(len(palavra)):
+#     letras[palavra[i]] = letras.get(palavra[i], 0) + 1
+# print(letras)
+
+# exercicio 6
+
+# total = 0
+# vendas_1 = {'Janeiro': 1000, 'Fevereiro': 1500, 'Março': 1200}
+# for i in vendas_1:
+#     total += vendas_1[i]
+# print(total)
+
+# exercicio 7
+
+# dic = {'a': 1, 'b': 2, 'c': 3}
+
+# invertido = {}
+
+# for chave in dic:
+#     valor = dic[chave]
+#     invertido[valor] = chave
+
+# print(invertido)
+
+# exercicio 8
+
+# dic1 = {'a': 1, 'b': 2}
+# dic2 = {'c': 3, 'd': 4}
+
+# dic1.update(dic2)
+
+# print(dic1)
+
+# exercicio 9
+
+# notas = {'João': [7, 8, 9],'Maria': [10, 9, 8],'Ana': [6, 7, 8]}
+
+# for aluno in notas:
+#     lista = notas[aluno]
+#     media = sum(lista) / len(lista)
+#     print(aluno + ":", media)
+
+# exercicio 10
+
+# frase = input("Escreve uma frase: ")
+
+# palavras = frase.split()
+
+# contagem = {}
+
+# for palavra in palavras:
+#     if palavra in contagem:
+#         contagem[palavra] += 1
+#     else:
+#         contagem[palavra] = 1
+
+# print(contagem)
