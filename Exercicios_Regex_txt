@@ -1,0 +1,121 @@
+import re
+from datetime import datetime
+# exercicio 1
+
+# with open("dados.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     print(conteudo)
+
+# exercicio 2
+
+# with open("dados.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     emails = re.findall(r'\S+@\S+', conteudo)
+#     for i in emails:
+#         print(i)
+
+
+# exercicio 3
+
+# with open("dados.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     telemoveis = re.findall(r'\d{3}[ -]?\d{3}[ -]?\d{3}', conteudo)
+#     for i in telemoveis:
+#         print(i)
+
+# exercicio 4
+
+# with open("dados.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     nomes = re.findall(r'Nome:(.*?),', conteudo)
+#     for i in nomes:
+#         print(i)
+
+
+# exercicio 5 
+# with open("dados.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     nomes = re.findall(r'Nome:(.*?),', conteudo)
+#     telemoveis = re.findall(r'\d{3}[ -]?\d{3}[ -]?\d{3}', conteudo)
+#     emails = re.findall(r'\S+@\S+', conteudo)
+    
+#     with open('extraidos.txt', 'w+') as info:
+#         for i in range(len(nomes)):
+#             info.write(f"{nomes[i]}|{telemoveis[i]}|{emails[i]}\n")
+
+# exercicio 6
+# with open("dados.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     emails = re.findall(r'\S+@\S+.pt', conteudo)
+#     for i in emails:
+#         print(i)
+            
+# exercicio 7
+
+# with open("registos.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     nifs = re.findall(r'\d{9}', conteudo)
+#     for i in nifs:
+#         print(i)
+    
+    
+# exercicio 8
+    
+# with open("registos.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     nifs = re.findall(r'\d{2}[/-]\d{2}[/-]\d{4}', conteudo)
+#     for i in nifs:
+#         print(i)
+
+# exercicio 9
+
+# with open("registos.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     codigo_postal = re.findall(r'\d{4}-\d{3}', conteudo)
+#     for i in codigo_postal:
+#         print(i)
+
+# exercicio 10
+# with open("registos.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     sites = re.findall(r'https?://\S+', conteudo)
+#     for i in sites:
+#         print(i)
+        
+
+# exercicio 11
+# with open("registos.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+#     nifs = re.findall(r'\b[123568]\d{8}\b', conteudo)
+#     for i in nifs:
+#         print(i)
+
+# exercicio 12
+# with open("registos.txt", 'r') as arquivo:
+#     conteudo = arquivo.read()
+
+# nomes = re.findall(r'Nome:\s*(.*?)\s*\|', conteudo)
+# nifs = re.findall(r"NIF:\s*(\d{9})", conteudo)
+# datas = re.findall(r'\d{2}[/-]\d{2}[/-]\d{4}', conteudo)
+# codigos_postais = re.findall(r'\d{4}-\d{3}', conteudo)
+# sites = re.findall(r'https?://(\S+)', conteudo)
+
+# with open('resumo.txt', 'w',) as resumo:
+#     for i in range(len(nomes)):
+#         linha = f"{nomes[i]} | {nifs[i]} | {datas[i]} | {codigos_postais[i]} | {sites[i]}\n"
+#         resumo.write(linha)
+    
+
+# exercicio 13
+# with open("registos.txt", "r", encoding="utf-8") as arquivo:
+#     conteudo = arquivo.read()
+
+
+# datas = re.findall(r"\d{2}/\d{2}/\d{4}", conteudo)
+
+
+# for data_str in datas:
+#     data_obj = datetime.strptime(data_str, "%d/%m/%Y")
+    
+#     if data_obj.year < 2025:
+#         print(data_str)
