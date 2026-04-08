@@ -64,10 +64,10 @@ import re
 #     json.dump(registos_validos, novo_arquivo, indent=4, ensure_ascii=False)
 
 #Exercício 6
-with open("dados.json", "r") as arquivo:
-    dados = json.load(arquivo)
+# with open("dados.json", "r") as arquivo:
+#     dados = json.load(arquivo)
 
-with open("contactos.txt", "w") as arquivo_txt:
-    for pessoa in dados:
-        linha = f"Nome: {pessoa['nome']} | Email: {pessoa['email']}\n"
-        arquivo_txt.write(linha)
+# with open("contactos.txt", "w") as arquivo_txt:
+#     for pessoa in dados:
+#         linha = f"Nome: {pessoa['nome']} | Email: {pessoa['email']}\n"
+#         arquivo_txt.write(linha)

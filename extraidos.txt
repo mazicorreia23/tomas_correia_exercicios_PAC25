@@ -1,0 +1,4 @@
+ Ana Costa,|912345678,|ana.costa@gmail.com,
+ João Silva,|914-567-123,|joao_silva@empresa.pt,
+ Marta Reis,|210 987 654,|marta.reis@escola.edu,
+ Pedro,|968123456,|pedro123@hotmail.com,
