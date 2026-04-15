@@ -1,0 +1,89 @@
+
+# exercicio 1
+# def ordenar_palavras(lista):
+#     n = len(lista)
+#     for i in range(n):
+#         for j in range(0, n - i - 1):
+#             palavra1 = lista[j]
+#             palavra2 = lista[j + 1]
+            
+#             menor_comprimento = min(len(palavra1), len(palavra2))
+#             trocou = False
+            
+#             for k in range(menor_comprimento):
+#                 if ord(palavra1[k]) > ord(palavra2[k]):
+#                     lista[j], lista[j + 1] = lista[j + 1], lista[j]
+#                     trocou = True
+#                     break
+#                 elif ord(palavra1[k]) < ord(palavra2[k]):
+#                     trocou = True
+#                     break
+            
+#             if not trocou and len(palavra1) > len(palavra2):
+#                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
+                
+#     return lista
+
+# palavras = ["banana", "uva", "abacaxi", "laranja"]
+# resultado = ordenar_palavras(palavras)
+# print(resultado)
+# # exercicio 2
+# lista = ["Python", "inteligência", "Aprender", "dados", "Rede"]
+
+# n = len(lista)
+# for i in range(n):
+#     for j in range(n - 1):
+#         if lista[j].lower() < lista[j + 1].lower():
+#             lista[j], lista[j + 1] = lista[j + 1], lista[j]
+
+# print(lista)
+# exercicio 3
+# palavra = "algoritmo"
+
+# letras = list(palavra)
+# n = len(letras)
+
+# for i in range(n):
+#     for j in range(n - 1):
+#         if letras[j] > letras[j + 1]:
+#             letras[j], letras[j + 1] = letras[j + 1], letras[j]
+
+# resultado = "".join(letras)
+# print(resultado)
+# exercicio 4
+# lista = ["PYthon", "banana", "CÓDIGO", "intELIGENTE", "dados"]
+
+# def contar_minusculas(palavra):
+#     contagem = 0
+#     for letra in palavra:
+#         if 'a' <= letra <= 'z':
+#             contagem += 1
+#     return contagem
+
+# n = len(lista)
+# for i in range(n):
+#     for j in range(n - 1):
+#         if contar_minusculas(lista[j]) > contar_minusculas(lista[j + 1]):
+#             lista[j], lista[j + 1] = lista[j + 1], lista[j]
+
+# print(lista)
+# exercicio 5
+# lista = ["banana", "bola", "abacaxi", "arroz", "uva", "urso"]
+
+# grupos = {}
+
+# for palavra in lista:
+#     inicial = palavra[0]
+#     if inicial not in grupos:
+#         grupos[inicial] = []
+#     grupos[inicial].append(palavra)
+
+# for inicial in grupos:
+#     sublista = grupos[inicial]
+#     n = len(sublista)
+#     for i in range(n):
+#         for j in range(0, n - i - 1):
+#             if sublista[j] > sublista[j + 1]:
+#                 sublista[j], sublista[j + 1] = sublista[j + 1], sublista[j]
+
+# print(grupos)
